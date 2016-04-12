@@ -1,6 +1,9 @@
 # Universal-Jar-Transformer
 
 ## HOW TO USE
+Download the UniversalJarTransformer jar from [here](https://github.com/CameronAavik/Universal-Jar-Transformer/releases/tag/1.0.0).
+However you may prefer to clone the repo, make your own transformer, and build it manually. See below for details.
+
 To use you simply place the Universal Jar Transformer in the same directory as the jar you wish to transform'
 
 Then run `java -jar UniversalJarTransformer game.jar`
