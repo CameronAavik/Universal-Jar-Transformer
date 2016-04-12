@@ -2,10 +2,8 @@ package io.github.cameronaavik;
 
 import org.objectweb.asm.ClassWriter;
 
-public class CustomClassWriter extends ClassWriter
-{
-    public CustomClassWriter(int flags)
-    {
+class CustomClassWriter extends ClassWriter {
+    public CustomClassWriter(int flags) {
         super(flags);
     }
 
@@ -13,8 +11,7 @@ public class CustomClassWriter extends ClassWriter
     protected String getCommonSuperClass(String type1, String type2) {
         try {
             return super.getCommonSuperClass(type1, type2);
-        }
-        catch (Throwable t) {
+        } catch (Throwable t) {
             return "java/lang/Object";
         }
     }
